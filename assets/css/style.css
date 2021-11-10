@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #00f4ff 12.5%, #cb00cd 12.5%, #cb00cd 25%, #ff4439 25%, #ff4439 37.5%, #ffc300 37.5%, #ffc300 50%, #00f4ff 50%, #00f4ff 62.5%, #cb00cd 62.5%, #cb00cd 75%, #ff4439 75%, #ff4439 87.5%, #ffc300 87.5%, #ffc300 100%);
+}
+.main .main--Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 5% 0 0 0;
+}
+.main .main--Section div {
+  position: relative;
+  left: 440px;
+  top: 70px;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background: #ffc300;
+  font-size: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main--Section h1 {
+  font-size: 27vh;
+  margin-bottom: -10px;
+}
+.main .main--Section p {
+  font-size: 12vh;
+}
+
+.main .main--Icon--Container {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 4vh;
+}
+.main i {
+  padding: 9.5% 3% 0 0;
+}
+
+/*# sourceMappingURL=style.css.map */

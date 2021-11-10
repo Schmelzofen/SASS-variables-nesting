@@ -1,0 +1,58 @@
+$blue: rgb(0, 244, 255);
+$pink: rgb(203, 0, 205);
+$red: rgb(255, 68, 57);
+$yellow: rgb(255, 195, 0);
+$angle: 45deg;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin display($d, $jc, $ai){
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient($angle, $blue 12.50%, $pink 12.50%, $pink 25%, $red 25%, $red 37.50%, $yellow 37.50%, $yellow 50%, $blue 50%, $blue 62.50%, $pink 62.50%, $pink 75%, $red 75%, $red 87.50%, $yellow 87.50%, $yellow 100%);
+    .main--Section{
+        @include display(flex, center, center);
+        flex-direction: column;
+        color: white;
+        padding: 5% 0 0 0;
+        div{
+            position: relative;
+            left: 440px;
+            top: 70px;
+            height: 125px;
+            width: 125px;
+            border-radius: 50%;
+            background: $yellow;
+            font-size: 12vh;
+            @include display(flex, center, center);
+        }
+        h1{
+            font-size: 27vh;
+            margin-bottom: -10px;
+        }
+        p{
+            font-size: 12vh;
+        }
+    } 
+}
+
+.main{
+    .main--Icon--Container{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 4vh;
+    }
+    i{
+        padding: 9.5% 3% 0 0;
+    }
+}
